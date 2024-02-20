@@ -15,29 +15,35 @@ Este proyecto es un blog personal implementado con Nest.js. Permite la gestión 
    git clone <URL_DEL_REPOSITORIO>
    cd blog-nest
 Instala las dependencias del proyecto:
-npm install
-Ejecución
-Inicia la aplicación Nest.js:
-npm run start:dev
-La aplicación estará disponible en http://localhost:3000.
+   npm install
 
-Uso
+Inicia la aplicación Nest.js:
+   npm run start:dev
+
+##Uso
 Operaciones CRUD en Publicaciones
 Obtener todas las publicaciones:
-GET http://localhost:3000/posts
+   GET http://localhost:3000/posts
 Obtener una publicación por su ID:
-GET http://localhost:3000/posts/{postId}
+   GET http://localhost:3000/posts/{postId}
 Crear una nueva publicación:
-POST http://localhost:3000/posts
-Body: { "id": "postId", "title": "Título de la publicación", "content": "Contenido de la publicación" }
+   POST http://localhost:3000/posts
+   Body: { "id": "postId", "title": "Título de la publicación", "content": "Contenido de la publicación" }
 Actualizar una publicación existente:
-PUT http://localhost:3000/posts/{postId}
-Body: { "title": "Nuevo título", "content": "Nuevo contenido" }
+   PUT http://localhost:3000/posts/{postId}
+   Body: { "title": "Nuevo título", "content": "Nuevo contenido" }
 Eliminar una publicación:
-DELETE http://localhost:3000/posts/{postId}
+   DELETE http://localhost:3000/posts/{postId}
+
 Comentarios en Publicaciones
 Obtener comentarios para una publicación:
-GET http://localhost:3000/posts/{postId}/comments
+   GET http://localhost:3000/posts/{postId}/comments
 Agregar un comentario a una publicación:
-POST http://localhost:3000/posts/{postId}/comments
-Body: { "id": "commentId", "text": "Este es un comentario." }
+   POST http://localhost:3000/posts/{postId}/comments
+   Body: { "id": "commentId", "text": "Este es un comentario." }
+
+
+
+
+
+
