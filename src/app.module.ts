@@ -1,8 +1,9 @@
+// app.module.ts
 import { Module } from '@nestjs/common';
-import { AuthModule } from './auth/auth.module';
-import { PostsModule } from './posts/posts.module'; // Importa el módulo de posts
+import { PostModule } from './post/post.module';
+
 
 @Module({
-  imports: [AuthModule, PostsModule], // Importa tanto el módulo de autenticación como el módulo de posts
+  imports: [PostModule],
 })
 export class AppModule {}
